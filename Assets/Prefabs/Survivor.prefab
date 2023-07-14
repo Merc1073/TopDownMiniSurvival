@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5555945763334724920}
   - component: {fileID: 4306294547780381143}
   - component: {fileID: 6443418761163148516}
+  - component: {fileID: 7787705710444501492}
   m_Layer: 0
   m_Name: Survivor
   m_TagString: Player
@@ -132,5 +133,21 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 16
   m_CollisionDetection: 0
+--- !u!114 &7787705710444501492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8775798850526362122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391f11f47ad987f45a2100038784782c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  hunger: 100
+  stamina: 100
+  moveSpeed: 3
