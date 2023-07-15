@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public float stamina;
     public float moveSpeed;
 
+    public bool isGunEquipped = false;
+
     Rigidbody rb;
 
     private Camera mainCamera;
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
         Aim();
 
         rb.rotation = Quaternion.Euler(-90, 0, 0);
+
 
     }
 
@@ -83,6 +86,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("DroppedGun"))
         {
+            isGunEquipped = true;
             this.gameObject.GetComponent<SpriteRenderer>().sprite = holdingGun;
             Destroy(other.gameObject);
         }
