@@ -81,10 +81,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.43, y: 0.37}
+  m_Size: {x: 0.37, y: 0.43}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!135 &4306294547780381143
@@ -147,7 +147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 391f11f47ad987f45a2100038784782c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
   health: 100
   hunger: 100
   stamina: 100
   moveSpeed: 3
+  holdingGun: {fileID: 0}

@@ -148,6 +148,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 963194227}
     - target: {fileID: 7787705710444501492, guid: 349d8fd68a45cd948b8203e1e03841e5, type: 3}
+      propertyPath: holdingGun
+      value: 
+      objectReference: {fileID: 21300000, guid: da6824ab2d56afa41806a3337786f4c1, type: 3}
+    - target: {fileID: 7787705710444501492, guid: 349d8fd68a45cd948b8203e1e03841e5, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 963194227}

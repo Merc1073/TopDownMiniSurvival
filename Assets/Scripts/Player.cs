@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 
     Vector3 mousePos;
 
+    public Sprite holdingGun;
+
 
     private void Start()
     {
@@ -75,6 +77,15 @@ public class Player : MonoBehaviour
             transform.forward = direction;
         }
 
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("DroppedGun"))
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = holdingGun;
+            Destroy(other.gameObject);
+        }
     }
 
 }
