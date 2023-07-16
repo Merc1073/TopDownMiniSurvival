@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
     GameObject player;
 
     public Slider slider;
-    public Image image;
 
 
     void Start()
@@ -32,6 +31,7 @@ public class Enemy : MonoBehaviour
     {
 
         player = GameObject.FindGameObjectWithTag("Player");
+
 
         directionToPlayer = player.gameObject.transform.position - transform.position;
         directionToPlayer.Normalize();
